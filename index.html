@@ -2,50 +2,100 @@
 <html>
 
 <head>
+
 <title>Krymil | Roblox Developer</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 
+html{
+scroll-behavior:smooth;
+}
+
+*{
+box-sizing:border-box;
+}
+
 body{
-background:#f5f5f5;
-color:#222;
-font-family:Arial, sans-serif;
 margin:0;
-padding:0;
+font-family:'Poppins',sans-serif;
+background:#f6f8fb;
+color:#222;
 text-align:center;
 }
 
+/* HERO */
+
 header{
-padding:60px 20px;
+padding:80px 20px;
 background:white;
-box-shadow:0 4px 10px rgba(0,0,0,0.05);
+border-bottom:1px solid #e6e6e6;
 }
 
 h1{
-font-size:40px;
+font-size:42px;
 margin:10px;
 }
 
 h2{
-font-weight:normal;
-color:#555;
+color:#666;
+font-weight:400;
 }
 
+.tagline{
+color:#4f46e5;
+font-weight:600;
+margin-top:10px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#4f46e5;
+color:white;
+border-radius:6px;
+font-weight:600;
+transition:0.2s;
+box-shadow:0 5px 15px rgba(79,70,229,0.3);
+}
+
+.btn:hover{
+background:#3730a3;
+transform:translateY(-2px);
+}
+
+/* SECTION */
+
 .section{
-padding:40px 20px;
 max-width:900px;
 margin:auto;
+padding:40px 20px;
 }
+
+/* CARD */
 
 .card{
 background:white;
-padding:25px;
+padding:30px;
 margin:20px 0;
-border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border-radius:12px;
+border:1px solid #e5e7eb;
+box-shadow:0 6px 18px rgba(0,0,0,0.05);
+transition:0.2s;
 }
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LIST */
 
 ul{
 list-style:none;
@@ -54,18 +104,50 @@ padding:0;
 
 li{
 padding:6px;
+color:#444;
 }
 
+/* SKILL BARS */
+
+.skill{
+margin:15px 0;
+text-align:left;
+}
+
+.skill-name{
+margin-bottom:5px;
+font-weight:600;
+}
+
+.skill-bar{
+background:#e5e7eb;
+border-radius:8px;
+overflow:hidden;
+}
+
+.skill-fill{
+height:10px;
+background:#4f46e5;
+width:0;
+animation:fillSkill 2s forwards;
+}
+
+@keyframes fillSkill{
+from{width:0}
+to{width:var(--level)}
+}
+
+/* FOOTER */
+
 footer{
-margin-top:40px;
-padding:20px;
+padding:30px;
 font-size:14px;
 color:#666;
 }
 
 a{
-color:#0077ff;
 text-decoration:none;
+color:white;
 }
 
 </style>
@@ -77,14 +159,22 @@ text-decoration:none;
 <header>
 
 <h1>Krymil</h1>
+
 <h2>Roblox Systems Developer</h2>
 
-<p>
-I build scalable systems for Roblox games including
-DataStores, combat mechanics, GUI systems, and game economies.
+<p class="tagline">
+Trusted by Roblox developers for scalable game systems
 </p>
 
+<p>
+I build reliable Roblox systems including DataStores,
+combat mechanics, GUI interactions and economy systems.
+</p>
+
+<a class="btn" href="#contact">Hire Me</a>
+
 </header>
+
 
 <div class="section">
 
@@ -93,12 +183,12 @@ DataStores, combat mechanics, GUI systems, and game economies.
 <h3>About Me</h3>
 
 <p>
-I am a Roblox developer focused on building reliable and scalable
-game systems. I write clean and organized code suitable for both
-small and large Roblox projects.
+Roblox developer focused on building clean, scalable,
+and reliable systems for serious game projects.
 </p>
 
 </div>
+
 
 <div class="card">
 
@@ -106,61 +196,88 @@ small and large Roblox projects.
 
 <ul>
 <li>DataStore saving systems</li>
-<li>Economy and shop systems</li>
+<li>Economy & shop systems</li>
 <li>Combat systems and abilities</li>
-<li>GUI scripting and interactions</li>
+<li>GUI scripting & interactions</li>
 <li>Tycoon systems</li>
 <li>Custom gameplay mechanics</li>
 </ul>
 
 </div>
 
+
 <div class="card">
 
 <h3>Skills</h3>
 
-<ul>
-<li>Lua scripting</li>
-<li>Roblox systems design</li>
-<li>Game mechanics development</li>
-<li>GUI programming</li>
-<li>Data management</li>
-</ul>
+<div class="skill">
+<div class="skill-name">Lua Scripting</div>
+<div class="skill-bar">
+<div class="skill-fill" style="--level:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Roblox Systems Design</div>
+<div class="skill-bar">
+<div class="skill-fill" style="--level:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Game Mechanics</div>
+<div class="skill-bar">
+<div class="skill-fill" style="--level:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">GUI Programming</div>
+<div class="skill-bar">
+<div class="skill-fill" style="--level:75%"></div>
+</div>
+</div>
 
 </div>
+
 
 <div class="card">
 
 <h3>Testimonials</h3>
 
 <p>
-Testimonials will be added as I complete more client projects.
+Testimonials will be added as I complete more client work.
+References available upon request.
 </p>
 
 </div>
 
-<div class="card">
+
+<div class="card" id="contact">
 
 <h3>Contact</h3>
 
-<p>Developer: Krymil</p>
+<p><b>Developer:</b> Krymil</p>
 
-<p>Payment Method: Robux</p>
+<p><b>Payment:</b> Robux</p>
 
-<p>
-Discord: nightstand132_95145
-</p>
+<p><b>Discord:</b> nightstand132_95145</p>
+
+<a class="btn" href="https://discord.com/users/nightstand132_95145">
+Message Me on Discord
+</a>
 
 </div>
 
 </div>
+
 
 <footer>
 
-<p>© 2026 Krymil | Roblox Developer</p>
+© 2026 Krymil | Roblox Developer
 
 </footer>
 
 </body>
 
-                        </html>
+  </html>
