@@ -30,13 +30,13 @@ text-align:center;
 /* HERO */
 
 header{
-padding:80px 20px;
+padding:90px 20px;
 background:white;
 border-bottom:1px solid #e6e6e6;
 }
 
 h1{
-font-size:42px;
+font-size:44px;
 margin:10px;
 }
 
@@ -49,6 +49,7 @@ font-weight:400;
 color:#4f46e5;
 font-weight:600;
 margin-top:10px;
+font-size:18px;
 }
 
 /* BUTTON */
@@ -56,18 +57,18 @@ margin-top:10px;
 .btn{
 display:inline-block;
 margin-top:20px;
-padding:12px 25px;
+padding:14px 28px;
 background:#4f46e5;
 color:white;
-border-radius:6px;
+border-radius:8px;
 font-weight:600;
 transition:0.2s;
-box-shadow:0 5px 15px rgba(79,70,229,0.3);
+box-shadow:0 6px 20px rgba(79,70,229,0.35);
 }
 
 .btn:hover{
 background:#3730a3;
-transform:translateY(-2px);
+transform:translateY(-3px);
 }
 
 /* SECTION */
@@ -83,16 +84,16 @@ padding:40px 20px;
 .card{
 background:white;
 padding:30px;
-margin:20px 0;
-border-radius:12px;
+margin:25px 0;
+border-radius:14px;
 border:1px solid #e5e7eb;
-box-shadow:0 6px 18px rgba(0,0,0,0.05);
-transition:0.2s;
+box-shadow:0 8px 22px rgba(0,0,0,0.05);
+transition:0.25s;
 }
 
 .card:hover{
-transform:translateY(-4px);
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transform:translateY(-5px);
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
 }
 
 /* LIST */
@@ -110,12 +111,12 @@ color:#444;
 /* SKILL BARS */
 
 .skill{
-margin:15px 0;
+margin:18px 0;
 text-align:left;
 }
 
 .skill-name{
-margin-bottom:5px;
+margin-bottom:6px;
 font-weight:600;
 }
 
@@ -135,6 +136,13 @@ animation:fillSkill 2s forwards;
 @keyframes fillSkill{
 from{width:0}
 to{width:var(--level)}
+}
+
+/* CONTACT HIGHLIGHT */
+
+.contact-card{
+border:2px solid #4f46e5;
+box-shadow:0 10px 30px rgba(79,70,229,0.2);
 }
 
 /* FOOTER */
@@ -163,12 +171,12 @@ color:white;
 <h2>Roblox Systems Developer</h2>
 
 <p class="tagline">
-Trusted by Roblox developers for scalable game systems
+Building scalable and reliable systems for serious Roblox games
 </p>
 
 <p>
-I build reliable Roblox systems including DataStores,
-combat mechanics, GUI interactions and economy systems.
+I develop high-quality systems including DataStores,
+combat mechanics, GUI systems, and economy features.
 </p>
 
 <a class="btn" href="#contact">Hire Me</a>
@@ -183,8 +191,8 @@ combat mechanics, GUI interactions and economy systems.
 <h3>About Me</h3>
 
 <p>
-Roblox developer focused on building clean, scalable,
-and reliable systems for serious game projects.
+Dedicated Roblox developer focused on clean, scalable, and efficient scripting.
+I aim to deliver reliable systems that developers can build their games on.
 </p>
 
 </div>
@@ -246,14 +254,14 @@ and reliable systems for serious game projects.
 <h3>Testimonials</h3>
 
 <p>
-Testimonials will be added as I complete more client work.
-References available upon request.
+Currently working with clients — testimonials will be added soon.<br><br>
+References available on request.
 </p>
 
 </div>
 
 
-<div class="card" id="contact">
+<div class="card contact-card" id="contact">
 
 <h3>Contact</h3>
 
@@ -280,4 +288,4 @@ Message Me on Discord
 
 </body>
 
-  </html>
+</html>
