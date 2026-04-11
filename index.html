@@ -22,34 +22,40 @@ box-sizing:border-box;
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#f6f8fb;
-color:#222;
+background:linear-gradient(120deg,#020617,#0f172a,#020617);
+background-size:400% 400%;
+animation:bgmove 12s infinite alternate;
+color:#e5e7eb;
 text-align:center;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%}
+100%{background-position:100% 50%}
 }
 
 /* HERO */
 
 header{
 padding:90px 20px;
-background:white;
-border-bottom:1px solid #e6e6e6;
 }
 
 h1{
 font-size:44px;
 margin:10px;
+color:#22d3ee;
+text-shadow:0 0 15px #22d3ee;
 }
 
 h2{
-color:#666;
+color:#94a3b8;
 font-weight:400;
 }
 
 .tagline{
-color:#4f46e5;
+color:#22d3ee;
 font-weight:600;
 margin-top:10px;
-font-size:18px;
 }
 
 /* BUTTON */
@@ -58,17 +64,17 @@ font-size:18px;
 display:inline-block;
 margin-top:20px;
 padding:14px 28px;
-background:#4f46e5;
-color:white;
+background:#22d3ee;
+color:black;
 border-radius:8px;
 font-weight:600;
 transition:0.2s;
-box-shadow:0 6px 20px rgba(79,70,229,0.35);
+box-shadow:0 0 15px #22d3ee;
 }
 
 .btn:hover{
-background:#3730a3;
 transform:translateY(-3px);
+box-shadow:0 0 30px #22d3ee;
 }
 
 /* SECTION */
@@ -82,18 +88,18 @@ padding:40px 20px;
 /* CARD */
 
 .card{
-background:white;
+background:#111827;
 padding:30px;
 margin:25px 0;
 border-radius:14px;
-border:1px solid #e5e7eb;
-box-shadow:0 8px 22px rgba(0,0,0,0.05);
+border:1px solid #22d3ee;
+box-shadow:0 0 10px #22d3ee;
 transition:0.25s;
 }
 
 .card:hover{
-transform:translateY(-5px);
-box-shadow:0 12px 30px rgba(0,0,0,0.08);
+transform:translateY(-6px);
+box-shadow:0 0 25px #22d3ee;
 }
 
 /* LIST */
@@ -105,10 +111,10 @@ padding:0;
 
 li{
 padding:6px;
-color:#444;
+color:#cbd5f5;
 }
 
-/* SKILL BARS */
+/* SKILLS */
 
 .skill{
 margin:18px 0;
@@ -121,14 +127,14 @@ font-weight:600;
 }
 
 .skill-bar{
-background:#e5e7eb;
+background:#1e293b;
 border-radius:8px;
 overflow:hidden;
 }
 
 .skill-fill{
 height:10px;
-background:#4f46e5;
+background:#22d3ee;
 width:0;
 animation:fillSkill 2s forwards;
 }
@@ -138,11 +144,11 @@ from{width:0}
 to{width:var(--level)}
 }
 
-/* CONTACT HIGHLIGHT */
+/* CONTACT */
 
 .contact-card{
-border:2px solid #4f46e5;
-box-shadow:0 10px 30px rgba(79,70,229,0.2);
+border:2px solid #22d3ee;
+box-shadow:0 0 25px #22d3ee;
 }
 
 /* FOOTER */
@@ -150,12 +156,12 @@ box-shadow:0 10px 30px rgba(79,70,229,0.2);
 footer{
 padding:30px;
 font-size:14px;
-color:#666;
+color:#64748b;
 }
 
 a{
 text-decoration:none;
-color:white;
+color:black;
 }
 
 </style>
@@ -171,12 +177,12 @@ color:white;
 <h2>Roblox Systems Developer</h2>
 
 <p class="tagline">
-Building scalable and reliable systems for serious Roblox games
+Building scalable systems for serious Roblox games
 </p>
 
 <p>
-I develop high-quality systems including DataStores,
-combat mechanics, GUI systems, and economy features.
+I develop systems including DataStores, combat mechanics,
+GUI systems, and custom gameplay features.
 </p>
 
 <a class="btn" href="#contact">Hire Me</a>
@@ -191,8 +197,7 @@ combat mechanics, GUI systems, and economy features.
 <h3>About Me</h3>
 
 <p>
-Dedicated Roblox developer focused on clean, scalable, and efficient scripting.
-I aim to deliver reliable systems that developers can build their games on.
+Focused on building clean, efficient, and scalable systems for Roblox developers.
 </p>
 
 </div>
@@ -203,12 +208,12 @@ I aim to deliver reliable systems that developers can build their games on.
 <h3>Systems I Can Build</h3>
 
 <ul>
-<li>DataStore saving systems</li>
+<li>DataStore systems</li>
 <li>Economy & shop systems</li>
-<li>Combat systems and abilities</li>
-<li>GUI scripting & interactions</li>
+<li>Combat systems</li>
+<li>GUI interactions</li>
 <li>Tycoon systems</li>
-<li>Custom gameplay mechanics</li>
+<li>Custom mechanics</li>
 </ul>
 
 </div>
@@ -221,12 +226,12 @@ I aim to deliver reliable systems that developers can build their games on.
 <div class="skill">
 <div class="skill-name">Lua Scripting</div>
 <div class="skill-bar">
-<div class="skill-fill" style="--level:100%"></div>
+<div class="skill-fill" style="--level:90%"></div>
 </div>
 </div>
 
 <div class="skill">
-<div class="skill-name">Roblox Systems Design</div>
+<div class="skill-name">System Design</div>
 <div class="skill-bar">
 <div class="skill-fill" style="--level:85%"></div>
 </div>
@@ -234,13 +239,6 @@ I aim to deliver reliable systems that developers can build their games on.
 
 <div class="skill">
 <div class="skill-name">Game Mechanics</div>
-<div class="skill-bar">
-<div class="skill-fill" style="--level:90%"></div>
-</div>
-</div>
-
-<div class="skill">
-<div class="skill-name">GUI Programming</div>
 <div class="skill-bar">
 <div class="skill-fill" style="--level:80%"></div>
 </div>
@@ -254,8 +252,7 @@ I aim to deliver reliable systems that developers can build their games on.
 <h3>Testimonials</h3>
 
 <p>
-Currently working with clients — testimonials will be added soon.<br><br>
-References available on request.
+Working with clients — testimonials will be added soon.
 </p>
 
 </div>
@@ -265,14 +262,10 @@ References available on request.
 
 <h3>Contact</h3>
 
-<p><b>Developer:</b> Krymil</p>
-
-<p><b>Payment:</b> Robux</p>
-
 <p><b>Discord:</b> nightstand132_95145</p>
 
 <a class="btn" href="https://discord.com/users/nightstand132_95145">
-Message Me on Discord
+Message Me
 </a>
 
 </div>
@@ -282,7 +275,7 @@ Message Me on Discord
 
 <footer>
 
-© 2026 Krymil | Roblox Developer
+© 2026 Krymil
 
 </footer>
 
